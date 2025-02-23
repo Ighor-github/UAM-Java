@@ -1,0 +1,72 @@
+public class Exemplo{
+    public static void main(String[] args) {
+        Garrafa garrafa1=new Garrafa(500, "Verde", "Plástico", "Cheia");
+        Garrafa garrafa2= new Garrafa(700, "Amarela", "Vidro", "Cheia"); 
+        Garrafa garrafa3= new Garrafa(400, "Verde Escuro", "Plástico", "Pela metade"); 
+        Garrafa garrafa4= new Garrafa(550, "Amarela esverdeado", "Vidro", "Cheia"); 
+        Garrafa garrafa5= new Garrafa(800, "Verde Claro", "Plástico", "Vazia"); 
+        Garrafa garrafa6= new Garrafa(300, "Verde", "Plástico", "Vazia"); 
+
+        System.out.println("1°");
+        System.out.println(+garrafa1.armazenamento);
+        System.out.println(garrafa1.cor);
+        System.out.println(garrafa1.material);
+        function.funcaogarrafa();
+        System.out.println(garrafa1.status);
+        System.out.println("------------------------------------------");
+        System.out.println("2°");
+        System.out.println(garrafa2.armazenamento);
+        System.out.println(garrafa2.cor);
+        System.out.println(garrafa2.material);
+        function.funcaogarrafa();
+        System.out.println(garrafa2.status);
+        System.out.println("------------------------------------------");
+        System.out.println("3°");
+        System.out.println(garrafa3.armazenamento);
+        System.out.println(garrafa3.cor);
+        System.out.println(garrafa3.material);
+        function.funcaogarrafa();
+        System.out.println(garrafa3.status);
+        System.out.println("------------------------------------------");
+        System.out.println("4°");
+        System.out.println(garrafa4.armazenamento);
+        System.out.println(garrafa4.cor);
+        System.out.println(garrafa4.material);
+        function.funcaogarrafa();
+        System.out.println(garrafa4.status);
+        System.out.println("------------------------------------------");
+        System.out.println("5°");
+        System.out.println(garrafa5.armazenamento);
+        System.out.println(garrafa5.cor);
+        System.out.println(garrafa5.material);
+        function.funcaogarrafa();
+        System.out.println(garrafa5.status);
+        System.out.println("------------------------------------------");
+        System.out.println("6°");
+        System.out.println(garrafa6.armazenamento);
+        System.out.println(garrafa6.cor);
+        System.out.println(garrafa6.material);
+        function.funcaogarrafa();
+        System.out.println(garrafa6.status);
+    }
+}
+
+class Garrafa{
+    int armazenamento;
+    String cor;
+    String material;
+    String status;
+    
+    public Garrafa(int armazenamento, String cor, String material, String status){
+        this.armazenamento=armazenamento;
+        this.cor=cor;
+        this.material=material;
+        this.status=status;
+    }
+}
+
+class function{
+    public static void funcaogarrafa(){
+        System.out.println("Beber Água");
+    }
+}
