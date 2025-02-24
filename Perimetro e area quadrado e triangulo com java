@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+public class Exemplo{
+    public static void main(String[] args) {
+        System.out.println("Digite o número referente a figura que você deeja calcular a área:");
+        System.out.println("[1]Para calcularmos o perimetro e área do triangulo");
+        System.out.println("[2]Para calcularmos o perimetro e área do quadrado ou retangulo");
+        Scanner entrada=new Scanner(System.in);
+        int opition=entrada.nextInt();
+        if (opition==1) {
+            System.out.println("Ok. Então vamos calcular o primetro e a área do triangulo");
+            System.out.println("Digite o valor do primeiro lado do triangulo: ");
+            Double lado1=entrada.nextDouble();
+            System.out.println("Digite o valor do segundo lado do triangulo: ");
+            Double lado2=entrada.nextDouble();
+            System.out.println("Digite o alor do terceiro lado do triangulo: ");
+            Double lado3=entrada.nextDouble();
+            Double resultadoT=lado1+ lado2+ lado3;
+            Double areaT=(lado1+lado2+lado3)/3;
+            System.out.println("O perimetro do seu triangulo é: "+resultadoT);
+            System.out.println("A area do seu triangulo é: "+areaT);
+            entrada.close();
+        }else if (opition==2){
+            System.out.println("OK. Então vamos calcular o perimetro e a área do quadrado ou retangulo");
+            System.out.println("Digite nessa ordem para que não haja alterações: ");
+            System.out.println("          1°");
+            System.out.println(   "     |----------------|");
+            System.out.println(   "     |                |");
+            System.out.println("2°   |                |  4°");
+            System.out.println(   "     |                |");
+            System.out.println(   "     |                |");
+            System.out.println(   "     |----------------|");
+            System.out.println("                  3° ");
+            System.out.println("Digite o valor do primeiro lado do quadrado/retangulo: ");
+            Double lado1Q=entrada.nextDouble();
+            System.out.println("Digite o valor do segundo lado do quadrado/retangulo: ");
+            Double lado2Q=entrada.nextDouble();
+            System.out.println("Digite o valor do terceiro lado do quadrado/retangulo: ");
+            Double lado3Q=entrada.nextDouble();
+            System.out.println("Digite o valor do quarto lado do quadrado/retangulo: ");
+            Double lado4Q=entrada.nextDouble();
+            Double resultadoQ=lado1Q+lado2Q+lado3Q+lado4Q;
+            Double areaQ=+lado1Q *lado2Q;
+            System.out.println("O perimetro do seu quadrado/retangulo é: " +resultadoQ);
+            System.out.println("E a aréa do quadrado/retangulo é: "+areaQ);
+            entrada.close();
+        }else{
+            System.out.println("Tente uma opção valida");
+        }
+        
+    }    
+}
+
+class Triangulo{
+    double lado1;
+    double lado2;
+    double lado3;
+
+    public Triangulo(double lado1, double lado2, double lado3){
+        this.lado1=lado1;
+        this.lado2=lado2;
+        this.lado3=lado3;
+    }
+}
+
+class Quadrado{
+    Double lado1;
+    Double lado2;
+    Double lado3;
+    Double lado4;
+
+    public Quadrado(Double lado1, Double lado2, Double lado3, Double lado4){
+        this.lado1=lado1;
+        this.lado2=lado2;
+        this.lado3=lado3;
+        this.lado4=lado4;
+    }
+}
